@@ -746,6 +746,56 @@ a:hover { color: var(--accent-dark); text-decoration: underline; }
     font-weight: 600;
 }
 
+/* --- Related Articles Section --- */
+.related-articles {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 2px solid var(--border);
+}
+
+.related-articles h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: var(--fg);
+}
+
+.related-articles .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.related-articles .card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transform: translateY(-2px);
+}
+
+.related-articles .card h3 {
+    font-size: 1em;
+    margin: 8px 0 10px;
+    line-height: 1.4;
+}
+
+.related-articles .card h3 a {
+    color: var(--fg);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.related-articles .card h3 a:hover {
+    color: var(--accent);
+}
+
+.related-articles .card p {
+    font-size: 0.9em;
+    color: var(--fg-secondary);
+    line-height: 1.5;
+    margin: 0;
+}
+
 /* --- Disclosure (sticky footer) --- */
 .site-footer {
     border-top: 1px solid var(--border);
