@@ -9,8 +9,8 @@
     <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
 
     <title>How to Use ChatGPT for Competitor Analysis (Step by Step) | Tool Compare</title>
-    <meta name="description" content="Learn how to use ChatGPT for competitor analysis step by step: real prompts, pricing teardowns, positioning maps, and the limits you should know about.">
-    <meta name="keywords" content="chatgpt competitor analysis, ai competitive research, market analysis, chatgpt prompts for competitor research, ai competitor analysis tools">
+    <meta name="description" content="A practical step-by-step guide to ChatGPT competitor analysis: real prompts, pricing teardowns, battlecards, and where the AI genuinely falls short.">
+    <meta name="keywords" content="chatgpt competitor analysis, ai competitive research, market analysis, chatgpt prompts, competitor research tools">
         <meta name="impact-site-verification" value="72e78125-83d8-4a51-b7db-e3ad7e2be67b">
     <link rel="canonical" href="https://toolcompare.co/tutorial/use-chatgpt-competitor-analysis">
     <link rel="stylesheet" href="/style.css?v=20260804">
@@ -36,9 +36,9 @@
     {
       "@type": "Article",
       "headline": "How to Use ChatGPT for Competitor Analysis (Step by Step)",
-      "description": "Learn how to use ChatGPT for competitor analysis step by step: real prompts, pricing teardowns, positioning maps, and the limits you should know about.",
-      "datePublished": "2026-10-26",
-      "dateModified": "2026-10-26",
+      "description": "A practical step-by-step guide to ChatGPT competitor analysis: real prompts, pricing teardowns, battlecards, and where the AI genuinely falls short.",
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
       "author": {
         "@type": "Person",
         "name": "Editorial Team"
@@ -88,9 +88,9 @@
             <h1>How to Use ChatGPT for Competitor Analysis (Step by Step)</h1>
             <div class="meta-row">
                 <span class="badge badge-tutorial">Tutorial</span>
-                <time datetime="2026-10-26">October 26, 2026</time>
+                <time datetime="2026-11-09">November 09, 2026</time>
                 <span>·</span>
-                <span class="reading-time">7 min read</span>
+                <span class="reading-time">10 min read</span>
                 <span class="affiliate-tag">🔄 Affiliate Links</span>
             </div>
         </header>
@@ -102,69 +102,170 @@
 </div>
             <p><em>When you buy through links on our site, we may earn a commission.</em></p>
 <h2 id="how-to-use-chatgpt-for-competitor-analysis">How to Use ChatGPT for Competitor Analysis (Step by Step)</h2>
-<p>A proper competitor analysis used to mean a week of tab-hopping: pricing pages, G2 reviews, LinkedIn posts, sitemaps, a half-finished spreadsheet, and a slide deck nobody reads. ChatGPT can compress most of that into an afternoon. Not all of it — most of it.</p>
-<p>The catch is that ChatGPT is a confident writer, not a researcher. Ask it "what does Notion charge for the Team plan?" and it will answer instantly, in a clean table, possibly with numbers that were true eighteen months ago. Ask it to "analyze the competitive landscape" and you'll get a tidy essay full of phrases like "strong market position" that mean nothing and cost you a client meeting.</p>
-<p>So this tutorial is about the workflow that actually works: use ChatGPT for the thinking and structuring, use its browsing and file-reading for the gathering, and verify anything that ends up in a pricing table or a sales deck. I've run this process on SaaS markets, agency niches, and one very strange local services category. Below is the version I keep coming back to.</p>
-<h2 id="what-chatgpt-is-genuinely-good-at-here">What ChatGPT is genuinely good at here</h2>
-<p>Before the steps, it helps to know which parts of competitive research it accelerates and which parts it fumbles.</p>
+<p>Most competitive research advice assumes you have a budget for Crayon or Klue and a dedicated analyst to run them. Most small businesses have neither. They have a founder or a marketing manager with eleven other things on their plate and a vague sense that a competitor just changed their pricing page.</p>
+<p>That's the gap ChatGPT fills. Not perfectly, and not without some real caveats I'll get into — but well enough that a solo operator can produce a competitor teardown in an afternoon that would have taken a consultant a week.</p>
+<p>I've run this workflow for a handful of SaaS and ecommerce clients over the past year. Here's exactly how it works, including the prompts, the parts where ChatGPT will confidently lie to you, and what to do about it.</p>
+<h2 id="what-chatgpt-is-actually-good-at">What ChatGPT Is Actually Good At (And What It Isn't)</h2>
+<p>Let's get the limitations out of the way first, because they shape the entire workflow.</p>
+<p><strong>ChatGPT is genuinely good at:</strong></p>
+<ul>
+<li>Synthesizing messy inputs — pasted web pages, PDFs, CSV exports — into structured analysis</li>
+<li>Turning raw observations into frameworks: SWOT, positioning maps, battlecards</li>
+<li>Drafting the actual deliverable your sales team will read</li>
+<li>Playing devil's advocate on your own positioning ("here's why a prospect would pick them over you")</li>
+<li>Running the same analysis across 8 competitors without getting bored</li>
+</ul>
+<p><strong>ChatGPT is bad at:</strong></p>
+<ul>
+<li>Knowing current facts without browsing enabled. Its training data has a cutoff, and pricing pages change constantly</li>
+<li>Giving you real traffic numbers, ad spend, or revenue figures. It will estimate if you push it, and those estimates are fiction</li>
+<li>Accessing gated content — G2 reviews behind a login, paywalled analyst reports, your competitor's internal <a href="https://slack.pxf.io/c/7203256/3887205/52501" rel="nofollow sponsored">Slack</a></li>
+<li>Anything requiring a live, continuously updated feed of competitor moves</li>
+</ul>
+<p>The practical takeaway: <strong>ChatGPT is the analyst, not the data source.</strong> You feed it facts; it does the thinking. If you skip the feeding step, you get plausible-sounding garbage.</p>
+<p>That's why I pair it with a live-research tool. Perplexity for real-time web lookups, or a data platform like <a href="https://semrush.com/?ref=revenueclaw" rel="nofollow sponsored">Semrush</a> if I need hard numbers. <a href="https://tool-link.com" rel="nofollow sponsored">Check Tool -></a> for a current comparison of those options.</p>
+<h2 id="step-1-define-a-competitive-set-you-can-actually-analyze">Step 1: Define a Competitive Set You Can Actually Analyze</h2>
+<p>Before you open ChatGPT, write down your competitors in three buckets:</p>
+<ul>
+<li><strong>Direct</strong> — same product, same buyer, same price band (3–5 companies)</li>
+<li><strong>Adjacent</strong> — different approach, overlapping buyer (2–3 companies)</li>
+<li><strong>Status quo</strong> — "we just do it in a spreadsheet" or "we hire an intern" (1–2 entries)</li>
+</ul>
+<p>That third bucket matters more than people think. In most market analysis work I've done, the biggest competitor is inertia, and ChatGPT is useful for articulating <em>why</em> someone would switch from doing nothing.</p>
+<p>Cap the list at 8. Beyond that, the output gets shallow and you stop reading it.</p>
+<h2 id="step-2-set-up-a-project-with-persistent-context">Step 2: Set Up a Project With Persistent Context</h2>
+<p>If you're on ChatGPT Plus or above, use Projects. It keeps all your competitor research in one place with shared instructions, so you don't re-explain your business every session.</p>
+<p>Create a new project and paste in custom instructions like this:</p>
+<pre><code>You are a competitive intelligence analyst supporting [COMPANY NAME].
+<p>About us:</p>
+<ul>
+<li>We sell [PRODUCT] to [TARGET BUYER]</li>
+<li>Our price is [PRICE]</li>
+<li>Our main differentiator is [DIFFERENTIATOR]</li>
+<li>Our weakness is [HONEST WEAKNESS]</li>
+</ul>
+<p>Rules for every response:</p>
+<ul>
+<li>Never state a fact about a competitor unless I have provided it in this</li>
+</ul>
+<p>conversation or you have cited a source you browsed.</p>
+<ul>
+<li>If you don't know something, say "UNKNOWN — needs verification."</li>
+<li>Flag any claim you're inferring rather than sourcing.</li>
+<li>Write in plain English. No marketing adjectives.</li>
+</ul>
+<p></code></pre></p>
+<p>Rule #2 is the important one. Without it, ChatGPT fills gaps with confident invention, and if you paste that into a board deck you'll regret it.</p>
+<p>If you're on the free tier, you don't get Projects, but you can paste the same block at the top of each new chat. Annoying, but it works.</p>
+<h2 id="step-3-feed-it-real-data">Step 3: Feed It Real Data</h2>
+<p>This is the step people skip, and it's the one that determines whether the output is worth anything.</p>
+<p>Gather raw material first:</p>
+<ul>
+<li><strong>Pricing pages</strong> — copy the full text of each competitor's pricing page, including FAQ sections and fine print</li>
+<li><strong>Homepage and product pages</strong> — the headline, subhead, and feature bullets</li>
+<li><strong>Recent changelog or release notes</strong> — signals where they're investing</li>
+<li><strong>Job postings</strong> — a company hiring three enterprise AEs is moving upmarket; that's a strategic tell</li>
+<li><strong>G2 or Capterra reviews</strong> — copy the 3-star reviews specifically. Five-star reviews are marketing; three-star reviews are product feedback</li>
+<li><strong>Funding announcements and press releases</strong> — context for why they're behaving a certain way</li>
+</ul>
+<p>Drop these into a single document per competitor, then upload the files to ChatGPT or paste them in. If you have a CSV of review data, the Data Analysis feature will parse it directly and give you coded themes instead of vibes.</p>
+<p>One warning: don't paste anything you wouldn't want in a cloud system. Competitor info is fine. Your own unreleased roadmap or customer contracts are not.</p>
+<h2 id="step-4-run-the-core-analysis-prompts">Step 4: Run the Core Analysis Prompts</h2>
+<p>Here are the four prompts I actually use, in order.</p>
+<h3 id="prompt-1-positioning-teardown">Prompt 1 — Positioning teardown</h3>
+<pre><code>Below are the homepage and pricing page copy for [COMPETITOR].
+<p>Extract:</p>
+<ul>
+<li>Who they say they're for (quote the exact language)</li>
+<li>The primary pain they claim to solve</li>
+<li>The outcome they promise, and any specific numbers they cite</li>
+<li>What they conspicuously do NOT mention</li>
+<li>The 3 words they repeat most often</li>
+</ul>
+<p>Then tell me: what buyer are they optimizing for, and what buyer are</p>
+<p>they implicitly deprioritizing?</p>
+<p></code></pre></p>
+<p>Point 4 is where you find openings. If nobody in your category mentions implementation time, and your product is fast to deploy, that's your wedge.</p>
+<h3 id="prompt-2-pricing-and-packaging-analysis">Prompt 2 — Pricing and packaging analysis</h3>
+<pre><code>Here is the pricing page for [COMPETITOR A], [COMPETITOR B], and
+<p>[COMPETITOR C].</p>
+<p>Build a table with: entry price, price at 10 users, what's gated</p>
+<p>behind the next tier, overage charges, contract requirements, and</p>
+<p>free tier limits.</p>
+<p>Then answer: at what company size does each competitor become the</p>
+<p>cheapest option? Where is the pricing gap in this market?</p>
+<p></code></pre></p>
+<p>This one consistently produces something useful. ChatGPT is very good at normalizing messy pricing structures into a comparable grid — per-seat vs. usage-based vs. flat-rate is exactly the kind of thing it handles cleanly.</p>
+<h3 id="prompt-3-objection-simulation">Prompt 3 — Objection simulation</h3>
+<pre><code>You are a [TARGET BUYER] evaluating us against [COMPETITOR].
+<p>Using only the materials I've provided, write the five strongest</p>
+<p>reasons you would choose [COMPETITOR] over us. Be specific and</p>
+<p>unflattering. Do not soften anything.</p>
+<p></code></pre></p>
+<p>This is the prompt that earns its keep. It surfaces objections your sales team hears but doesn't report upward.</p>
+<h3 id="prompt-4-synthesis-into-a-deliverable">Prompt 4 — Synthesis into a deliverable</h3>
+<pre><code>Using everything in this project, write a one-page competitive
+<p>battlecard for [COMPETITOR] with these sections:</p>
+<ul>
+<li>Who they are (2 sentences)</li>
+<li>Where they win (3 bullets, each with a source)</li>
+<li>Where they lose (3 bullets, each with a source)</li>
+<li>Our counter-positioning (3 bullets)</li>
+<li>Trap-setting questions our reps can ask prospects</li>
+</ul>
+<p>Mark any claim lacking a source as [VERIFY].</p>
+<p></code></pre></p>
+<p>That last instruction is doing real work. It forces the model to distinguish what it knows from what it's guessing, and it gives you a to-do list instead of a document full of holes you didn't notice.</p>
+<h2 id="step-5-turn-findings-into-a-monitoring-rhythm">Step 5: Turn Findings Into a Monitoring Rhythm</h2>
+<p>A one-time analysis goes stale in about six weeks. Competitors ship, reprice, and reposition constantly.</p>
+<p>Set up a lightweight loop:</p>
+<ul>
+<li><strong>Weekly (15 min):</strong> Ask ChatGPT to diff this week's competitor changelog, blog RSS, or pricing page against last week's saved copy. Paste both versions and ask what changed and what it implies.</li>
+<li><strong>Monthly (1 hour):</strong> Refresh the pricing table. Repricing is the single most actionable signal in most markets.</li>
+<li><strong>Quarterly (half day):</strong> Rerun prompts 1 through 4 with fresh inputs and update the battlecards.</li>
+</ul>
+<p>For the weekly diff, a dedicated page-monitoring tool beats manual copy-paste. Visualping or Google Alerts handle the "tell me when it changes" part for free or close to it, and then ChatGPT handles the "what does this change mean" part.</p>
+<h2 id="chatgpt-plans-and-alternatives-compared">ChatGPT Plans and Alternatives Compared</h2>
+<p>Pricing below reflects what I found at the time of writing. Verify before you buy — this category reprices often.</p>
 <table class="price-table">
-<thead><tr><th>Task</th><th>How well ChatGPT does it</th><th>Why</th></tr></thead>
+<thead><tr><th>Tool</th><th>Best For</th><th>Entry Price</th><th>Live Web Data</th><th>Competitive Research Fit</th></tr></thead>
 <tbody>
-<tr><td>Summarizing a competitor's homepage and positioning</td><td>Very well</td><td>It reads the copy and extracts claims fast</td></tr>
-<tr><td>Clustering complaints from reviews</td><td>Very well</td><td>Pattern-spotting across messy text is its strength</td></tr>
-<tr><td>Building a comparison matrix structure</td><td>Very well</td><td>It'll give you a sensible row/column layout in seconds</td></tr>
-<tr><td>Drafting battle cards and sales talk tracks</td><td>Very well</td><td>Writing task, low factual risk if inputs are right</td></tr>
-<tr><td>Finding competitors you've never heard of</td><td>Mixed</td><td>Browsing helps, but it misses small/new players</td></tr>
-<tr><td>Current pricing and plan limits</td><td>Poor without verification</td><td>Training data goes stale; pages change</td></tr>
-<tr><td>Traffic, revenue, headcount estimates</td><td>Poor</td><td>It will guess and sound certain doing it</td></tr>
+<tr><td>ChatGPT Free</td><td>Trying the workflow</td><td>$0</td><td>Limited</td><td>Weak — no Projects, capped browsing</td></tr>
+<tr><td>ChatGPT Go</td><td>Casual use</td><td>~$8/mo</td><td>Limited</td><td>Basic synthesis only</td></tr>
+<tr><td><strong>ChatGPT Plus</strong></td><td><strong>Solo founders, small teams</strong></td><td><strong>$20/mo</strong></td><td><strong>Yes</strong></td><td><strong>Best value starting point</strong></td></tr>
+<tr><td>ChatGPT Pro</td><td>Heavy daily research</td><td>$200/mo</td><td>Yes</td><td>Overkill unless you live in it</td></tr>
+<tr><td>ChatGPT Team</td><td>2+ person marketing teams</td><td>$25–30/user/mo</td><td>Yes</td><td>Shared Projects, good for agencies</td></tr>
+<tr><td>Perplexity Pro</td><td>Live web research</td><td>$20/mo</td><td>Strong, cited</td><td>Best companion to ChatGPT</td></tr>
+<tr><td>Claude Pro</td><td>Long-document analysis</td><td>$20/mo</td><td>Limited</td><td>Strong on big PDFs and reports</td></tr>
+<tr><td><a href="https://semrush.com/?ref=revenueclaw" rel="nofollow sponsored">Semrush</a></td><td>Hard traffic and keyword data</td><td>~$140/mo</td><td>N/A (own dataset)</td><td>Needed for real numbers</td></tr>
+<tr><td>Crayon / Klue</td><td>Dedicated CI teams</td><td>Custom (typically $15k+/yr)</td><td>Yes</td><td>Continuous monitoring at scale</td></tr>
 </tbody>
 </table>
-<p>Read that table as a division of labor. ChatGPT drafts; you fact-check. Anything that touches money — pricing, funding, headcount — gets a browser tab and a second look.</p>
-<h2 id="before-you-start-four-settings-that-change-the-output">Before you start: four settings that change the output</h2>
-<p>Skip this and you'll spend half your time re-explaining your business to the model.</p>
-<p><strong>1. Turn on web search.</strong> In ChatGPT, the search/browse toggle needs to be active for anything time-sensitive. If your plan includes Deep Research, use it for the heavier multi-source jobs — it runs a longer agentic search and returns a cited report rather than a single-turn answer.</p>
-<p><strong>2. Write Custom Instructions.</strong> Two boxes, both worth filling. Something like: <em>"I run a [type] business selling to [audience]. When I ask for competitive analysis, give me tables, cite sources, flag anything you're unsure about, and never invent pricing — say 'needs verification' instead."</em> That last clause alone has saved me from more embarrassing errors than any other prompt.</p>
-<p><strong>3. Create a Project.</strong> Projects keep files and instructions together. <a href="https://www.make.com/en/register?pc=shaynesailab" rel="nofollow sponsored">Make</a> one called "Competitor Analysis," drop in your own positioning doc, pricing page, ICP notes, and any competitor PDFs or screenshots you've collected. Every chat inside that project starts with that context loaded.</p>
-<p><strong>4. Decide your plan.</strong> The free tier can do a surprising amount of this, but web browsing limits and file uploads get tight fast. If competitive research is a recurring job rather than a one-off, Plus is the realistic floor. <a href="https://toolcompare.co/go/chatgpt" rel="nofollow sponsored">Check Tool -></a></p>
-<h2 id="step-1-define-your-competitive-set">Step 1: Define your competitive set (and don't let ChatGPT do it alone)</h2>
-<p>The most common failure in AI competitive research is a competitor list that's either too broad or built entirely from the model's memory. ChatGPT knows the famous players in a category. It does not reliably know the 12-person startup that's been quietly winning deals in your segment for a year.</p>
-<p>Start with your own list — everyone you've lost a deal to, everyone prospects mention on calls, everyone in the "alternatives to X" search results. Then use ChatGPT to widen it:</p>
-<blockquote>Here are the competitors I already track: [list]. My product is [one sentence], sold to [audience], priced at [range]. Using web search, identify 5–8 additional companies that serve the same buyer with a similar solution. For each, give me the company name, URL, one-line description, and why you think they overlap with my list. Exclude anything that's clearly a different category or aimed at enterprise-only buyers.</blockquote>
-<p>Then cut the list yourself. A tight set of five competitors you analyze properly beats fifteen you skim. If you sell to SMBs and one "competitor" only sells to Fortune 500 procurement teams, drop it — they're not taking your deals.</p>
-<h2 id="step-2-build-a-competitor-profile-one-company-at-a-time">Step 2: Build a competitor profile, one company at a time</h2>
-<p>Here's where people go wrong: they paste five URLs and ask for a comparison. You get five shallow summaries. Run them individually instead, then compare.</p>
-<blockquote>Using web search, build a profile of [competitor] based on their website, pricing page, and recent public announcements. Fill in this structure:</blockquote>
-<p>></p>
-<blockquote>- What they sell, in their own words (quote the homepage headline verbatim)</blockquote>
-<blockquote>- Who they say it's for</blockquote>
-<blockquote>- Pricing: plan names, prices, billing periods, what's gated behind each tier. If a price isn't published, say so — do not estimate.</blockquote>
-<blockquote>- Top 3 differentiators they emphasize</blockquote>
-<blockquote>- Any integrations or partnerships they lead with</blockquote>
-<blockquote>- Funding, size, or ownership if publicly disclosed</blockquote>
-<blockquote>- Source URLs for each factual claim</blockquote>
-<p>></p>
-<blockquote>Flag anything you couldn't confirm from a primary source.</blockquote>
-<p>The "quote the headline verbatim" instruction matters more than it looks. Marketing headlines are where positioning lives, and paraphrasing loses the exact language you'll want to position against.</p>
-<p>Repeat for each competitor. Yes, it's five prompts instead of one. It's also five times more useful.</p>
-<h2 id="step-3-tear-down-pricing-without-getting-burned">Step 3: Tear down pricing without getting burned</h2>
-<p>Pricing pages are the highest-risk part of this whole exercise, because ChatGPT's training data is full of old plan structures and it doesn't always know which is current. Two rules: use web search, and demand a "last verified" note.</p>
-<blockquote>Compare the pricing of these five competitors: [list with URLs]. For each, produce a row with: entry price, mid-tier price, top-tier price, billing options (monthly/annual discount), free tier or trial, seat minimums, and the two or three features most commonly used as upgrade triggers. Include the URL you pulled each price from. If a page didn't load or a price is hidden behind "contact us," mark it UNVERIFIED rather than filling it in.</blockquote>
-<p>Then open each URL and check. This takes ten minutes and is the difference between a useful analysis and a deck that gets corrected in front of a prospect.</p>
-<p>One thing ChatGPT does well here: spotting packaging patterns. Ask it <em>"across these five pricing pages, what's the most common upgrade trigger, and where does my own pricing sit relative to the group?"</em> You'll often find your whole category gates seats while you gate features, or vice versa — the kind of insight that's obvious in hindsight and invisible when you're staring at one page at a time.</p>
-<h2 id="step-4-map-positioning-and-messaging">Step 4: Map positioning and messaging</h2>
-<p>This is the step where ChatGPT earns its subscription. Positioning analysis is text analysis, and text analysis is what it's best at.</p>
-<blockquote>Here are the homepage headlines and subheadlines for five competitors: [paste them]. Identify:</blockquote>
-<p>></p>
-<blockquote>1. The claim territory each one occupies — what promise are they leading with?</blockquote>
-<blockquote>2. Words and phrases that appear across three or more of them (the category clichés).</blockquote>
-<blockquote>3. Any claim only one competitor makes (potential white space).</blockquote>
-<blockquote>4. Which competitor is positioned most upmarket and which most downmarket, based on language alone.</blockquote>
-<p>></p>
-<blockquote>Then tell me which positioning angle is most crowded and which is least occupied.</blockquote>
-<p>Paste the actual copy rather than linking. You want it analyzing the words, not a summary of the words. The "category clichés" output is usually the most valuable — it shows you the phrases every buyer has already read fifteen times, which is exactly the list to avoid in your own copy.</p>
-<h2 id="step-5-mine-reviews-for-complaints-you-can-solve">Step 5: Mine reviews for complaints you can solve</h2>
-<p>Public review sites are a goldmine and almost nobody reads them systematically. ChatGPT will cluster hundreds of reviews in a couple of minutes.</p>
-<blockquote>Here are 40 reviews of [competitor] from G2/Capterra/Reddit [paste text]. Group the complaints into themes. For each theme, give me: a short label, how many reviews mention it, a representative quote, and whether it's a product limitation or a service/support issue</blockquote>
+<p><a href="https://tool-link.com" rel="nofollow sponsored">Check Tool -></a> if you want to see how these stack up on current pricing.</p>
+<h2 id="pros-and-cons">Pros and Cons</h2>
+<p><strong>Pros</strong></p>
+<ul>
+<li>Costs $20/month versus five figures a year for a dedicated CI platform</li>
+<li>Handles messy, unstructured inputs better than any spreadsheet workflow I've tried</li>
+<li>The objection-simulation prompt surfaces things internal teams are too polite to say</li>
+<li>Produces a finished deliverable, not just raw notes — the battlecard prompt alone saves hours</li>
+<li>Scales across 8 competitors without a proportional increase in effort</li>
+</ul>
+<p><strong>Cons</strong></p>
+<ul>
+<li>Will invent specifics if you don't explicitly forbid it. The guardrail instruction is mandatory, not optional</li>
+<li>No reliable numbers on traffic, ad spend, or revenue. You need a separate data source for that</li>
+<li>Browsing is inconsistent — sometimes it cites sources, sometimes it works from memory without saying so</li>
+<li>Projects and the best features sit behind the $20 tier; free users get a noticeably worse experience</li>
+<li>Output quality tracks input quality almost linearly. Garbage in, confident garbage out</li>
+<li>No continuous monitoring. It's a point-in-time tool you have to re-run</li>
+</ul>
+<h2 id="common-mistakes">Common Mistakes</h2>
+<p><strong>Skipping the source material.</strong> Asking "analyze my competitors" with no inputs produces a generic essay. Feeding it four pricing pages produces a pricing teardown.</p>
+<p><strong>Trusting numbers.</strong> If ChatGPT tells you a competitor has 40,000 monthly visitors, that's a guess dressed up as a statistic. Get traffic data from <a href="https://semrush.com/?ref=revenueclaw" rel="nofollow sponsored">Semrush</a> or Similarweb, then bring it back into ChatGPT for interpretation.</p>
+<p><strong>One-shot analysis.</strong> The value compounds when you revisit it. A single teardown is a snapshot; a quarterly rhythm is actual intelligence.</p>
+<p><strong>Analyzing too many competitors.</strong> Eight is the ceiling. Five is better.</p>
+<p><strong>Publishing raw output.</strong> Everything ChatGPT produces needs a human pass</p>
             <div class="affiliate-cta">
     <p>🔍 Want the best deal? Check current prices and availability.</p>
     <a href="https://toolcompare.co/#deals" class="cta-btn">Compare Prices →</a>
@@ -216,13 +317,19 @@
     <div class="toc">
         <h4>On This Page</h4>
         <a href="#how-to-use-chatgpt-for-competitor-analysis" class="toc-h2" style="padding-left:0px">How to Use ChatGPT for Competitor Analysis</a>
-<a href="#what-chatgpt-is-genuinely-good-at-here" class="toc-h2" style="padding-left:0px">What ChatGPT is genuinely good at here</a>
-<a href="#before-you-start-four-settings-that-change-the-output" class="toc-h2" style="padding-left:0px">Before you start: four settings that change the output</a>
-<a href="#step-1-define-your-competitive-set" class="toc-h2" style="padding-left:0px">Step 1: Define your competitive set</a>
-<a href="#step-2-build-a-competitor-profile-one-company-at-a-time" class="toc-h2" style="padding-left:0px">Step 2: Build a competitor profile, one company at a time</a>
-<a href="#step-3-tear-down-pricing-without-getting-burned" class="toc-h2" style="padding-left:0px">Step 3: Tear down pricing without getting burned</a>
-<a href="#step-4-map-positioning-and-messaging" class="toc-h2" style="padding-left:0px">Step 4: Map positioning and messaging</a>
-<a href="#step-5-mine-reviews-for-complaints-you-can-solve" class="toc-h2" style="padding-left:0px">Step 5: Mine reviews for complaints you can solve</a>
+<a href="#what-chatgpt-is-actually-good-at" class="toc-h2" style="padding-left:0px">What ChatGPT Is Actually Good At</a>
+<a href="#step-1-define-a-competitive-set-you-can-actually-analyze" class="toc-h2" style="padding-left:0px">Step 1: Define a Competitive Set You Can Actually Analyze</a>
+<a href="#step-2-set-up-a-project-with-persistent-context" class="toc-h2" style="padding-left:0px">Step 2: Set Up a Project With Persistent Context</a>
+<a href="#step-3-feed-it-real-data" class="toc-h2" style="padding-left:0px">Step 3: Feed It Real Data</a>
+<a href="#step-4-run-the-core-analysis-prompts" class="toc-h2" style="padding-left:0px">Step 4: Run the Core Analysis Prompts</a>
+<a href="#prompt-1-positioning-teardown" class="toc-h3" style="padding-left:8px">Prompt 1 — Positioning teardown</a>
+<a href="#prompt-2-pricing-and-packaging-analysis" class="toc-h3" style="padding-left:8px">Prompt 2 — Pricing and packaging analysis</a>
+<a href="#prompt-3-objection-simulation" class="toc-h3" style="padding-left:8px">Prompt 3 — Objection simulation</a>
+<a href="#prompt-4-synthesis-into-a-deliverable" class="toc-h3" style="padding-left:8px">Prompt 4 — Synthesis into a deliverable</a>
+<a href="#step-5-turn-findings-into-a-monitoring-rhythm" class="toc-h2" style="padding-left:0px">Step 5: Turn Findings Into a Monitoring Rhythm</a>
+<a href="#chatgpt-plans-and-alternatives-compared" class="toc-h2" style="padding-left:0px">ChatGPT Plans and Alternatives Compared</a>
+<a href="#pros-and-cons" class="toc-h2" style="padding-left:0px">Pros and Cons</a>
+<a href="#common-mistakes" class="toc-h2" style="padding-left:0px">Common Mistakes</a>
     </div>
 </aside>
 </article>
