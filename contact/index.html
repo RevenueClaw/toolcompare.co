@@ -76,11 +76,28 @@
             <div class="newsletter-signup">
                 <h3>Get the Best Tools Delivered</h3>
                 <p>Weekly roundup of the top SaaS deals, new reviews, and exclusive comparisons. No spam, ever.</p>
-                <form class="signup-form" action="https://chipradar.io/subscribe" method="GET">
+                <form class="signup-form" onsubmit="return nlSub(event)">
                     <input type="email" name="email" placeholder="your@email.com" required>
-                    <input type="hidden" name="source" value="toolcompare">
+                    <input type="hidden" name="site" value="toolcompare">
                     <button type="submit">Subscribe</button>
+                    <span class="nl-msg" id="nl-msg" style="margin-left:10px;font-size:0.9em"></span>
                 </form>
+                <script>
+                function nlSub(e) {
+                    e.preventDefault();
+                    var f = e.target, msg = document.getElementById('nl-msg');
+                    var d = new FormData(f);
+                    d.set('site', f.querySelector('input[name=site]').value);
+                    fetch('https://chipradar.io/api/affiliate/subscribe', { method: 'POST', body: d })
+                        .then(function(r) { return r.json(); })
+                        .then(function(j) {
+                            msg.textContent = j.success ? 'Subscribed! Watch your inbox.' : 'Something went wrong - please try again later.';
+                            if (j.success) { f.querySelector('button').disabled = true; }
+                        })
+                        .catch(function() { msg.textContent = 'Something went wrong - please try again later.'; });
+                    return false;
+                }
+                </script>
             </div>
             <div class="footer-nav">
                 <a href="/">Home</a>
