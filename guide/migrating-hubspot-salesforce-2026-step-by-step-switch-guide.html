@@ -75,6 +75,35 @@
           "item": "https://toolcompare.co/guide/migrating-hubspot-salesforce-2026-step-by-step-switch-guide"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I export HubSpot contacts, deals, and emails to Salesforce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Contacts and deals export as CSV and map into Salesforce's import wizards. Email threads and activity history need the HubSpot export tools; property change history and workflow logic generally don't survive and must be re-created."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I migrate to Salesforce Core or Starter Suite?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Starter Suite ($25/user/mo) fits teams of roughly 1-10 sellers who need the standard lead-to-close pipeline. Core ($195/user/mo, billed annually) is for teams that need Agentforce, Slack , and Tableau built in. Middle-ground customization needs usually land on Pro Suite ($100/user/mo)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I avoid double-paying during the migration?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Run Salesforce Starter Suite in parallel with HubSpot Free (the free CRM keeps working while you pay for nothing new), reconcile one pipeline, then flip to paid Salesforce tiers only after your first clean month-end close. HubSpot contracts are monthly per seat, so a one-month overlap is cheap insurance. The deeper product-vs-product call lives in our HubSpot vs Salesforce comparison \u2014 read it before you pick the tier you'll live in for two years."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -193,11 +222,11 @@ if(b){b.addEventListener('click',calc)}
 </table>
 <p>Two sellers on Salesforce Starter Suite cost a verified $1,200 over two years — often less than a single HubSpot Professional seat — but Starter Suite trades away the customization that pushes teams to Pro Suite at $2,400/user over 24 months. Price the seats, then price the admin hours.</p>
 <h2 id="faq">FAQ</h2>
-<p>Q: Can I export HubSpot contacts, deals, and emails to Salesforce?</p>
+<p><strong>Q: Can I export HubSpot contacts, deals, and emails to Salesforce?</strong></p>
 <p>A: Contacts and deals export as CSV and map into Salesforce's import wizards. Email threads and activity history need the HubSpot export tools; property change history and workflow logic generally don't survive and must be re-created.</p>
-<p>Q: Should I migrate to Salesforce Core or Starter Suite?</p>
+<p><strong>Q: Should I migrate to Salesforce Core or Starter Suite?</strong></p>
 <p>A: Starter Suite ($25/user/mo) fits teams of roughly 1-10 sellers who need the standard lead-to-close pipeline. Core ($195/user/mo, billed annually) is for teams that need Agentforce, <a href="https://slack.pxf.io/c/7203256/3887205/52501?subId1=toolcompare&subId2=migratinghubspotsalesforce2026stepbystep" rel="nofollow sponsored">Slack</a>, and Tableau built in. Middle-ground customization needs usually land on Pro Suite ($100/user/mo).</p>
-<p>Q: How do I avoid double-paying during the migration?</p>
+<p><strong>Q: How do I avoid double-paying during the migration?</strong></p>
 <p>A: Run Salesforce Starter Suite in parallel with HubSpot Free (the free CRM keeps working while you pay for nothing new), reconcile one pipeline, then flip to paid Salesforce tiers only after your first clean month-end close. HubSpot contracts are monthly per seat, so a one-month overlap is cheap insurance.</p>
 <p>The deeper product-vs-product call lives in our <a href="/comparison/hubspot-vs-salesforce-small-business-crm-right/" rel="nofollow sponsored">HubSpot vs Salesforce comparison</a> — read it before you pick the tier you'll live in for two years.</p>
             <div class="affiliate-cta">
